@@ -86,7 +86,7 @@ public class Main {
         System.out.println("Enter holder name:");
         String name = scanner.nextLine();
         double deposit = readDouble(scanner, "Enter initial deposit (min 500):");
-        var account = bank.createSavingsAccount(name, deposit);
+        BankAccount account = bank.createSavingsAccount(name, deposit);
         System.out.println("Created: " + account.getAccountNumber());
     }
 
@@ -94,7 +94,7 @@ public class Main {
         System.out.println("Enter holder name:");
         String name = scanner.nextLine();
         double deposit = readDouble(scanner, "Enter initial deposit:");
-        var account = bank.createCurrentAccount(name, deposit);
+        BankAccount account = bank.createCurrentAccount(name, deposit);
         System.out.println("Created: " + account.getAccountNumber());
     }
 
